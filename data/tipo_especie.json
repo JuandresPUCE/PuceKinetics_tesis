@@ -1,0 +1,9 @@
+{
+    "tipo_especie_catalogo": [
+        {"id": 1, "Descripcion": "reactivo_limitante", "Color": "orange"},
+        {"id": 2, "Descripcion": "reactivo", "Color": "blue"},
+        {"id": 3, "Descripcion": "producto", "Color": "green"},
+        {"id": 4, "Descripcion": "inerte", "Color": "gray"},
+        {"id": 5, "Descripcion": "catalizador", "Color": "red"}
+    ]
+}
