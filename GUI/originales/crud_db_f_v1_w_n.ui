@@ -14,67 +14,92 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">/* Estilo para QMainWindow */
+   <string notr="true">/* estilo blanco naranja*/
+/* Estilo para QMainWindow */
 QMainWindow {
-    background-color: #0a0a0a; /* Fondo negro muy oscuro */
+    background-color: #ffffff; /* Fondo blanco */
 }
 
 /* Estilo para QWidget */
 QWidget {
-    background-color: #1a1a1a; /* Fondo negro oscuro para widgets */
+    background-color: #ffffff; /* Fondo blanco */
 }
-
 
 /* Estilo para QComboBox */
 QComboBox {
-    background-color: #2a2a2a; /* Fondo gris oscuro */
-    color: #d0d0d0; /* Texto gris claro */
+    background-color:  #ffffff; /* Fondo blanco */
+    color: #333333; /* Texto gris oscuro */
     border: 1px solid #3a3a3a; /* Borde gris oscuro */
     border-radius: 5px; /* Bordes redondeados */
 
 }
+
 QComboBox::drop-down {
-    border-left: 1px solid #3a3a3a; /* Borde del desplegable */
+    border-left: 1px solid #333333; /* Borde del desplegable */
 }
+
 /* Estilo para los elementos del desplegable */
 QComboBox QAbstractItemView {
-    background-color: #2a2a2a; /* Fondo gris oscuro de la lista desplegable */
-    color: #d0d0d0; /* Texto gris claro */
-    border: 1px solid #3a3a3a; /* Borde gris oscuro de la lista desplegable */
-    selection-background-color: #42a5f5; /* Fondo azul elegante para el ítem seleccionado */
-    selection-color: #d0d0d0; /* Texto gris claro para el ítem seleccionado */
+    background-color: #ffffff; /* Fondo blanco para el desplegable */
+    color: #333333; /* Texto gris oscuro */
+    selection-background-color: #ff9800; /* Fondo naranja elegante para la opción seleccionada */
+    selection-color: #ffffff; /* Texto blanco para la opción seleccionada */
+    border: 1px solid #333333; /* Borde gris oscuro */
+}
+QComboBox::item {
+    background-color: #ffffff; /* Fondo blanco para las opciones */
+    color: #333333; /* Texto gris oscuro */
+}
+
+QComboBox::item:selected {
+    background-color: #ff9800; /* Fondo naranja elegante para la opción seleccionada */
+    color: #ffffff; /* Texto blanco */
+}
+
+QComboBox::item:hover {
+    background-color: #f0f0f0; /* Fondo gris muy claro para la opción en hover */
+    color: #333333; /* Texto gris oscuro */
 }
 
 /* Estilo para QLineEdit */
 QLineEdit {
-    background-color: #2a2a2a; /* Fondo gris oscuro */
-    color: #d0d0d0; /* Texto gris claro */
-    border: 1px solid #3a3a3a; /* Borde gris oscuro */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333333; /* Texto gris oscuro */
+    border: 1px solid #333333; /* Borde gris oscuro */
     border-radius: 5px; /* Bordes redondeados */
 
 }
 /* Estilo para QPushButton */
 QPushButton {
-    background-color: #1a1a1a; /* Fondo negro */
-    color: #42a5f5; /* Texto azul elegante */
-    border: 1px solid #333; /* Borde gris oscuro */
-
+    background-color: #ff9800; /* Fondo naranja elegante */
+    color: rgb(0, 0, 0); /* Texto negro */
+    border: 1px solid #ff9800; /* Borde naranja elegante */
     border-radius: 10px; /* Bordes redondeados */
     text-align: center; /* Alineación del texto */
     padding: 1px 1px; /* Espaciado interno */
+
+    
 }
+
 QPushButton:hover {
-    background-color: #333; /* Fondo al pasar el ratón */
+    background-color: #e68900; /* Fondo naranja oscuro en hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más prominente en hover */
+}
+
+QPushButton:pressed {
+    background-color: #c97700; /* Fondo naranja más oscuro al hacer clic */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra reducida al hacer clic */
+    border: 1px solid #c97700; /* Borde naranja oscuro al hacer clic */
 }
 
 /* Estilo para QLabel */
 QLabel {
-    color: #d0d0d0; /* Texto gris claro */
+    color:  #1a1a1a; /* Fondo negro */
 }
 
 /* Estilo para QGroupBox sin borde visible pero con título alineado */
 QGroupBox {
-    background-color: #1a1a1a; /* Fondo negro */
+   background-color:  #ffffff; /* Fondo blanco */
     border: 1px solid rgba(0, 0, 0, 0); /* Borde transparente */
     margin-top: 15px; /* Espaciado superior para el título */
    
@@ -83,26 +108,26 @@ QGroupBox {
 
 QGroupBox::title {
     /*color: #42a5f5; /* Texto del título en azul elegante */
-	color: rgb(226, 226, 226);
+	 color:  #1a1a1a; /* Fondo negro */
 	
 
     subcontrol-origin: margin; /* Ajusta la posición del título */
     subcontrol-position: top left; /* Alinea el título en la parte superior izquierda */
-   
-    background-color: #1a1a1a; /* Fondo del título para que coincida con el fondo del QGroupBox */
+
 }
 /* Estilo para QTableWidget */
 QTableWidget {
-    background-color: #2a2a2a; /* Fondo gris oscuro */
-    color: #d0d0d0; /* Texto gris claro */
-    border: 1px solid #3a3a3a; /* Borde gris oscuro */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333333; /* Texto gris oscuro */
+    border: 1px solid #cccccc; /* Borde gris claro */
 }
 QTableWidget::item:selected {
-    background-color: #42a5f5; /* Fondo azul elegante para las celdas seleccionadas */
+   background-color: #ff9800; /* Fondo naranja elegante para las celdas seleccionadas */
+	color:  #1a1a1a; /* Texto  negro */
 }
 QHeaderView::section {
-    background-color: #1a1a1a; /* Fondo negro para la cabecera */
-    color: #d0d0d0; /* Texto gris claro */
+    background-color: #f5f5f5; /* Fondo gris claro para la cabecera */
+    color: #333333; /* Texto gris oscuro */
     border: 1px solid #333; /* Borde gris oscuro */
     /*padding: 5px; /* Espaciado interno */
 }
@@ -116,24 +141,25 @@ QHeaderView::section:vertical {
 
 /* Estilo para QTabWidget */
 QTabWidget {
-    background-color: #1a1a1a; /* Fondo negro */
-    border: 1px solid #333; /* Borde gris oscuro */
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #cccccc; /* Borde gris claro */
 }
 
 QTabWidget::pane {
-    border: 1px solid #333; /* Borde del panel de las pestañas */
+    border: 1px solid #cccccc; /* Borde del panel de las pestañas */
     border-radius: 5px; /* Bordes redondeados */
 }
 QTabBar::tab {
-    background-color: #2a2a2a; /* Fondo gris oscuro */
-    color: #d0d0d0; /* Texto gris claro */
-    border: 1px solid #3a3a3a; /* Borde gris oscuro */
+    background-color: #f5f5f5; /* Fondo gris claro */
+    color: #333333; /* Texto gris oscuro */
+    border: 1px solid #cccccc; /* Borde gris claro */
     border-radius: 5px; /* Bordes redondeados */
     padding: 5px 10px; /* Espaciado interno */
 }
 QTabBar::tab:selected {
-    background-color: #42a5f5; /* Fondo azul elegante para la pestaña seleccionada */
-    color: #d0d0d0; /* Texto gris claro */
+    background-color: #ff9800; /* Fondo naranja elegante para la pestaña seleccionada */
+    
+	color: rgb(0, 0, 0);
 }
 
 

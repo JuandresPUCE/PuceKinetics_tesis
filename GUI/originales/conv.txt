@@ -1,0 +1,5 @@
+pyuic6 -x .\dashboard_f_v1_w_n.ui -o procesar_datos_vista_nabl.py
+
+pyuic6 -x .\crud_db_f_v1_w_n.ui -o crud_db_vista_nabl.py
+
+pyuic6 -x .\flujo_datos_gui_f_v1_w_n.ui -o flujo_datos_vista_nabl.py
